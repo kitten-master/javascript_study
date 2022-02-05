@@ -1,12 +1,16 @@
 <script>
-    console.log(this);
+    [1,2,3,4].forEach(function(a){
+        console.log(a);
+    })
+
+    [1,2,3,4].forEach((a)=>{
+        console.log(a);
+    })
 
     var 오브젝트 = {
-        data: "data",
-        함수 : function(){
-            console.log(this);
+        함수 : () => {
+            return this;
         }
     }
-
     오브젝트.함수();
 </script>
