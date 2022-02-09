@@ -1,16 +1,12 @@
+<button id="버튼">버튼이에요</button>
 <script>
-    [1,2,3,4].forEach(function(a){
-        console.log(a);
-    })
+   
 
-    [1,2,3,4].forEach((a)=>{
-        console.log(a);
-    })
 
-    var 오브젝트 = {
-        함수 : () => {
-            return this;
-        }
-    }
-    오브젝트.함수();
+  document.getElementById('버튼').addEventListener('click', function(){
+    setTimeout(()=>{
+        console.log(this.innerHTML);
+    },1000) 
+  });
+
 </script>
